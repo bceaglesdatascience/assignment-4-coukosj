@@ -13,7 +13,7 @@ def add_tax(costs, tax):
 
 
 purchases = int(input("Number of purchases: "))
-tax = float(input("Sales Tax: "))
+tax = float(input("Sales tax: "))
 
 
 customers = []
