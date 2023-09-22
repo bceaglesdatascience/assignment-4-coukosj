@@ -1,10 +1,10 @@
 
-def plus_tax(item_cost, tax):
+def add_tax(item_cost, tax):
     for item in item_cost:
         item *= tax
     return item_cost
 
-def plus_tax(costs, tax):
+def add_tax(costs, tax):
     for item in range(len(costs)):
         taxed_item = costs[item] * (1+tax)
         costs[item] = taxed_item
@@ -28,7 +28,7 @@ for purchase in range(purchases):
         costs.append(cost)
 
 
-taxed_costs = plus_tax(costs, tax)
+taxed_costs = add_tax(costs, tax)
 
 for i in range(purchases):
     if customers[i] not in totals:
